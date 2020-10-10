@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="/styles.css"/>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+<body onload="navigate()">
+    <title>That amazing job applicant</title>
+    <div class="box name">ryan taylor</div>
+    <div class="box contact" onclick="contact()">contact</div>
+    <div class="box resume" onclick="resume()">resume</div>
+    <div class="box projectbox" onclick="projects()">projects</div>
+    <div class="box linkedin" onclick="linkedin()"><img src="/linkedin.png" class="image"></div>
+    <div class="box github" onclick="github()"><img src="/github.png" class="image"></div>
+    <div class="box aboutme" onclick='aboutme()'>about me</div>
+    <div class="box goodcauses" onclick="goodcauses()">good causes</div>
+    <div class="aboutview">
+        <div id="aboutback" class="back" onclick="aboutme()" style="visibility: hidden;">home</div>
+        <header>who i am</header><span>my name is <b style="color: #56ffb0">Ryan Taylor</b> -- and i am a student, developer, musician, volunteer, and activist.</span><p></p>
+        <span>I am gay and gender nonconforming, and use he/they pronouns. I'm also a proud <a href="https://www.autismspeaks.org/types-autism-what-asperger-syndrome">Aspie.</a></span><p></p>
+        <span>My favorite activities include playing piano, producing <a href="https://soundcloud.com/926892539">music</a>, and playing games like <a href="https://rocketleague.tracker.network/rocket-league/profile/steam/76561198819787189/overview">Rocket League</a> and </span><br>
+        <span>Minecraft.</span>
+    </div>
+    <div class="goodcausesview">
+        <div id="goodcausesback" class="back" onclick="goodcauses()" style="visibility: hidden;">home</div>
+        <header>what i support</header><span>the <b class="link" onclick="window.open('https://www.thetrevorproject.org/','_self');">Trevor Project</b>, which provides life-saving services to LGBTQ+ people.</span><p></p>
+        <span>the <b class="link" onclick="window.open('https://www.blacklivesmatter.com/','_self');">BLM</b> movement, which speaks for itself.</span><p></p>
+        <span>resources like <b class="link" onclick="window.open('https://www.unaids.org/en/','_self');">UNAIDS</b>, <b style="color: #56ffb0; cursor: pointer" onclick="window.open('https://transequality.org/issues/anti-violence','_self');">Trans Equality</b>, and <b style="color: #56ffb0; cursor: pointer" onclick="window.open('https://autisticadvocacy.org','_self');">ASAN</b>.</span><p></p>
+        <span>and the <b class="link" onclick="window.open('https://www.nrdc.org/','_self');">NRDC</b>. voting is important too, of course.</span><p></p>
+    </div>
+    <div class="contactview">
+        <div id="contactback" class="back" onclick="contact()" style="visibility: hidden;">home</div>
+        <header>how to reach me</header>
+        <span>send me <b class="link"><a href=mailto:ryan@ridgefield.cc?subject=Ryan,%20you're%20pretty%20cool.>an email</a></b> at ryan@ridgefield.cc or</span><p></p>
+        <span>connect with my <b class="link" onclick="window.open('https://www.facebook.com/profile.php?id=100013078004339/','_self');">Facebook</b>, or on <b style="color: #56ffb0; cursor: pointer" onclick="window.open('https://www.linkedin.com/in/ryan-taylor-00b6b8191/','_self');">Linkedin</b>.</span><p></p>
+    </div>
+    <div class="resumeview">
+        <div id="resumeback" class="back" onclick="resume()" style="visibility: hidden; margin-left: 59vw; margin-top: 60vh">home</div>
+        <embed src="/resume.pdf" style="width:50vw; height:80vh; margin-left: 4vw; margin-top: 0vh">
+    </div>
+    <div class="projectsview">
+        <div id="projectsback" class="back" onclick="projects()" style="visibility: hidden;  margin-left: 62vw; margin-top: 2vw;">home</div>
+        <header>what i work on</header>
+        <div class="projectbox"><b style="color: #56ffb0">levelr</b> -- a focused multi-source music recommendation service that promotes independent artists and gives back to marginalized communities.</div>
+        <br>
+        <hr style="margin-left: 2vw; width: 60vw;">
+        <div class="projectbox"><b style="color: #ffa8f8">qbear</b> -- a machine-learning based social network for LGBTQ+ people and allies to connect to resources and with each other.</div>
+        <br>
+        <hr style="margin-left: 2vw; width: 60vw;">
+        <div class="projectbox"><b style="color: #7daddd">machine learning projects</b><br>
+            - a deep neural network & class activation map algorithm that finds bone breaks on wrist x-rays to improve diagnostic accuracy<br>
+            - a convolutional neural network & generative adversarial network that generates unique handwriting from text input to improve accessibility</div>
+        <br>
+        <hr style="margin-left: 2vw; width: 60vw;">
+        <div class="projectbox">i also built and maintain the website you're on right now, from scratch + AWS :)</div>
+    </div>
+</body>
